@@ -1,1 +1,0 @@
-# satwiktech development demo files 
