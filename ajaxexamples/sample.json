@@ -1,0 +1,27 @@
+
+[
+    {
+    "id":"001"  ,
+    "name":"piyush singh",
+    "area":"Mumbai",
+    "amount":"300"
+    },
+    {
+    "id":"002"  ,
+    "name":"Nutan singh",
+    "area":"Mumbai",
+    "amount":"300"
+    },
+    {
+    "id":"003",  
+    "name":"Jyestha singh",
+    "area":"Mumbai",
+    "amount":"300"
+    }    ,
+    {
+    "id":"004",  
+    "name":"Manthan singh",
+    "area":"Mumbai",
+    "amount":"300"
+    }
+]

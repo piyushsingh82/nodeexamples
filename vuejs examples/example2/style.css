@@ -1,0 +1,60 @@
+#app {
+    height: 100%;
+    width: 100%;
+    
+  /*  background: url("https://source.unsplash.com/category/nature/1920x1080") no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    color:  #fff;
+  } 
+.lead-form {
+  background-color: green;
+    border-radius: 5px;
+    padding: 10px 50px 30px 50px;
+    margin-top:10px;
+    border:1px solid #444;
+    min-height: 400px;
+    
+  }
+ 
+  span.city-span {
+    color: (#fff);
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .form-control {
+    margin-bottom: 3px;
+  }
+  pre{
+    text-align: left;
+  }
+  a{
+    background:#000;
+    color:#fff;
+    padding:3px;
+  }
+  .demo{
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    display: inline-block;
+    margin: 10px;
+  }
+  .red{
+    background-color: red;
+  }
+  .blue{
+    background-color: blue;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  .orange{
+    background-color: orange;
+  }
+  

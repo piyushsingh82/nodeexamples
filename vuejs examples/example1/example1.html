@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue.js Tutorial | API Example</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+    
+
+        <div class="lead-form"> 
+           <div class="row">
+          <div class="col-md-6">
+
+
+            <p>{{title}}</p>
+
+            <pre> First Method to add text input to string of hello world use v-on:input="onchangeme" and write a method named onchange and use this.title</pre>
+            <input type="text" class="form-control" placeholder="Name" v-on:input="onchangeme" />
+            <pre> if you want to load first value of the title and not change when it is updated.type in something in first textbox you will see the change in the hello world title ,but not below.</pre>
+            <p v-once>{{title}}</p>
+            <pre> Second method to print text input to title is using v-model  as below.also we use v-bind:href for anchor tag and add data to show as link . </pre>
+            <input type="text" class="form-control" v-model="textheading" placeholder="usng v-model" />
+            <p>{{textheading}}</p>
+          </div>
+
+          <div class="col-md-6">
+
+            <p><a v-bind:href="link">google.com</a></p>
+
+
+            <pre>to display raw html on the page use data object as used in <html></html> as v-bind:href="link" </pre>
+            <p>{{finalTitle}}</p>
+            <pre> to display compiled html on the page of same data object as above. use v-html=finalTitle where finalTitle  is a data object. </pre>
+            <p v-html=finalTitle> </p>
+
+          </div>
+          
+        <div class="clearfix" ></div>
+         
+            <div class="col-md-6" v-on:mousemove="updatemousecordinates">
+                <pre> mouse events below for onbtnclick and onmousehover</pre>
+                
+                <p>mouse movement on x-cordinates {{x}} and y-cordinates {{y}} inside this div</p>
+                <p v-on:mousemove.stop="" class="deadarea">Dead spot area</p>
+                <button v-on:click="increase">increase</button> to increase counter
+                <button v-on:click="decrease">Decrease</button> to decrease counter
+                <p>Counter: {{counter }}</p>
+                <p>Result: {{result}}</p>
+              </div>
+            
+          
+              <div class="col-md-6">
+                <pre>on hitting  enter button in this text box below it wll show alert msg</pre>
+              <input type="text" v-on:keyup.enter="alertMe" />
+              </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+<script src="vue.js"></script>
+
+<script src="main.js"></script>
+
+</html>

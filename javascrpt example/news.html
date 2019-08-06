@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>sample</title>
+<script type="text/javascript" src="main.js">
+</script>
+</head>
+<body>
+<h1> Main js used to show calculation of two numbers </h1>
+<form method="post">
+<input type="text" name="firstno" id="firstno"/>
+<input type="text" name="secondno" id="secondno"/>
+<input type="button" name="calculate" value="calculate" onclick="calculateResult()"/> 
+<select class="tableDropdown" onchange="drawTable()">
+    <option value="select">select</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+</select>
+<br/><hr/>
+<div id="outputresult"></div>
+</form>
+<br/><hr/>
+<form method="POST">
+    <p>Accept name of 10 players and store in array/post on screen</p>
+    <input type="text" name="player1" value="" id="player1" placeholder="player 1 name "> 
+    <input type="text" name="player2" value="" id="player2" placeholder="player 2 name " > 
+    <input type="text" name="player3" value="" id="player3" placeholder="player 3 name "> 
+    <input type="text" name="player4" value="" id="player4" placeholder="player 4 name "> 
+    <input type="text" name="player5" value="" id="player5" placeholder="player 5 name "> 
+    <input type="text" name="player6" value="" id="player6" placeholder="player 6 name ">  
+    <input type="text" name="player7" value="" id="player7" placeholder="player 7 name "> 
+    <input type="text" name="player8" value="" id="player8" placeholder="player 8 name "> 
+    <input type="text" name="player9" value="" id="player9" placeholder="player 9 name "> 
+    <input type="text" name="player10" value="" id="player10" placeholder="player 10 name "> 
+    <button type="button" class="btn btn-primary" onclick="displayAllPlayers()">Submit</button>
+    <button type="reset" class="btn btn-secondary" onclick="clearAllFields()">Clear</button>
+</form>
+<br><hr/>
+<div id="createTable">
+
+</div>
+</body>
+</html>

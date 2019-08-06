@@ -1,0 +1,60 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top:50px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    
+}
+
+/* Home Page Carousel */
+.navbar-default {
+    background:#3d8afc;
+    
+    
+}
+    .navbar-default a.navbar-brand ,.navbar-default .navbar-nav li a{
+        color:#fff;
+    }
+header.carousel {
+    height: 50%;margin-top:-20px;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    min-height:370px
+}
+.text-primary { color:#4bde71;}
+a,a:hover, a:focus {color:#4bde71;}
+.btn-primary {background-color: #4bde71;    border-color: #a50212;}
+.navbar-default .navbar-toggle {border-color: #fff;}
+    .navbar-default .navbar-toggle .icon-bar {background-color: #fff;    }
+    .navbar-default .navbar-toggle .icon-bar {    background-color: #fdfdfd;}
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {    background-color: #1358c2;}
+	
