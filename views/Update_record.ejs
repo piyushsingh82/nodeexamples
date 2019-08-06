@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ 
+        <html class="no-js">
+        
+    <head>
+      <% include partials/head %>
+    </head>
+    <body>
+       <div class="container"> 
+         <% include partials/header %>
+        <main>
+          <h1>Update Employee data</h1>
+          <hr>
+          <div class="col-md-12">
+            
+            <form method="POST" id="contact-update" action="/app/updaterecord/<%= userdata._id%>">
+             <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                    <label for="srno">srno</label>
+                    <input type="text" name="srno" class="form-control" value="<%= userdata.srno %>" id="srno"/>
+                  </div>
+             </div>
+             <div class="col-md-6">
+                <div class="form-group">
+                    <label for="firstname" >firstname</label>
+                    <input type="text" name="firstname" class="form-control" value="<%= userdata.firstname %>" id="firstname" />
+                  </div>
+             </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>lastname</label>
+                      <input type="text" name="lastname" class="form-control" value="<%= userdata.lastname %>" id="lastname"/>
+                    </div>
+                   
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>email</label>
+                      <input type="text" name="email" class="form-control" value="<%= userdata.email %>" id="emailid"/>
+                    </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>age</label>
+                        <input type="text" name="age" class="form-control" value="<%= userdata.age %>" id="age"/>
+                      </div>
+                     
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>phone</label>
+                        <input type="text" name="phone" class="form-control" value="<%= userdata.phone %>" id="phone"/>
+                      </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label>sex</label>
+                          <input type="text" name="sex" class="form-control" value="<%= userdata.sex %>" id="sex"/>
+          
+                                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    
+                  </div>
+                </div> 
+                <div class="form-group form-check">
+                              <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-secondary" onclick="window.history.go(-1)">Cancel</button>
+                          </form>
+                        </div>
+            </main>
+      <hr>
+      <div class="clearfix">
+        &nbsp;
+      </div>
+   </div> 
+   <% include partials/footer %>
+</body>
+    
+</html>
