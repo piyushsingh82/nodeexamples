@@ -8,7 +8,6 @@ const app = express();
 //app.use(bodyParser.json());
 var urlEncodedParser = bodyParser.urlencoded({ extended: false });
 
-
 mongoose.promise = global.promise;
 
 mongoose.connect('mongodb://abcd123:abcd123@ds261136.mlab.com:61136/satwiktech',{useNewUrlParser:true})
