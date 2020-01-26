@@ -13,7 +13,7 @@
           <hr>
           <div class="col-md-12">
             
-            <form method="POST" id="contact-update" action="/app/updaterecord/<%= userdata._id%>">
+            <form method="POST" id="contact-update" enctype="multipart/form-data" action="/app/updaterecord/<%= userdata._id%>">
              <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -67,7 +67,9 @@
                                       </div>
                   </div>
                   <div class="col-md-6">
-                    
+                    <div class="form-group">
+                       <input type="file" name="myFile" />
+                      </div>
                   </div>
                 </div> 
                 <div class="form-group form-check">

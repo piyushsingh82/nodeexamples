@@ -36,8 +36,10 @@ class App extends Component {
     const UserList = (props) => (         
     <p>
      <img src= {props.picture.medium} /> 
+    
+    <p>
     <strong>name : </strong>
-     {props.name.title} {props.name.first} {props.name.last},
+     {props.name.title} {props.name.first} {props.name.last},</p>
     
      </p>
     )
