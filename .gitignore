@@ -1,1 +1,5 @@
 **/node_modules
+reactjs_examples/http_example/package-lock.json
+reactjs_examples/meanapp/package-lock.json
+reactjs_examples/meanapp/client/package-lock.json
+reactjs_examples/meanapp/server/package-lock.json
