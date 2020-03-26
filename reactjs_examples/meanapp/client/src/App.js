@@ -22,7 +22,7 @@ class App extends Component {
   componentDidMount() {
     this.getDataFromDb();
     if (!this.state.intervalIsSet) {
-      let interval = setInterval(this.getDataFromDb, 1000);
+      let interval = setInterval(this.getDataFromDb, 9999);
       this.setState({ intervalIsSet: interval });
     }
   }
@@ -108,7 +108,7 @@ class App extends Component {
       <div className="App">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <img src={logo} className="App-logo" alt="logo" /><a class="navbar-brand" href="#">Start Bootstrap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -132,11 +132,7 @@ class App extends Component {
       </div>
     </div>
   </nav>
-         <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
-      <p>I'M READY TO USE THE BACK END APIS! ;-</p>
+      <p className="martop100">I'M READY TO USE THE BACK END APIS! ;-</p>
         <ul className="container">
           {data.length <= 0
             ? 'NO DB ENTRIES YET'

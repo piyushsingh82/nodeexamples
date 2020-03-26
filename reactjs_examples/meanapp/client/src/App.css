@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #343a40;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -17,15 +17,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 50px;
 }
-
+.martop100{margin-top:100px}
 .App-link {
   color: #61dafb;
 }
 
 li{
   text-align:left;
-  list-style-type: square;
+  list-style-type: none;
 }
 @keyframes App-logo-spin {
   from {
